@@ -13,10 +13,10 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "FlutterFramework", path: "../FlutterFramework"),
-        // CocoaPods pins FBSDKCoreKit / FBSDKShareKit to exactly 17.0.2; SwiftPM
-        // allows 17.x (>= 17.0.2, < 18.0.0) so a consuming app can resolve patch
-        // updates and avoid conflicts with its own facebook-ios-sdk dependency.
-        .package(url: "https://github.com/facebook/facebook-ios-sdk", from: "17.0.2")
+        // CocoaPods pins FBSDKCoreKit / FBSDKShareKit to exactly 18.0.0, the
+        // version facebook_app_events pulls; SwiftPM allows 18.x (>= 18.0.0,
+        // < 19.0.0) so the app resolves one facebook-ios-sdk for both.
+        .package(url: "https://github.com/facebook/facebook-ios-sdk", from: "18.0.0")
     ],
     targets: [
         .target(

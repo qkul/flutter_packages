@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'appinio_social_share'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'A new Flutter project.'
   s.description      = <<-DESC
 A new Flutter project.
@@ -16,8 +16,8 @@ A new Flutter project.
   # Shared with the Swift Package Manager target — single source of truth.
   s.source_files = 'appinio_social_share/Sources/appinio_social_share/**/*.swift'
   s.dependency 'Flutter'
-  s.dependency 'FBSDKCoreKit', '17.0.2'
-  s.dependency 'FBSDKShareKit', '17.0.2'
+  s.dependency 'FBSDKCoreKit', '18.0.0'
+  s.dependency 'FBSDKShareKit', '18.0.0'
   s.static_framework = true
 
   s.platform = :ios, '9.0'
